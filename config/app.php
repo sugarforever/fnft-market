@@ -223,6 +223,6 @@ return [
     */
 
     'metamask' => [
-        'enabled' => false
+        'enabled' => true
     ]
 ];

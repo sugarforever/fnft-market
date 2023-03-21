@@ -57,7 +57,7 @@ class HandleInertiaRequests extends Middleware
                 ];
             },
             'metamask' => [
-                'enabled' => config("metamask.enabled"),
+                'enabled' => config("app.metamask.enabled"),
                 'signatureUrl' => route('metamask.signature'),
                 'authenticateUrl' => route('metamask.authenticate'),
                 'redirectUrl' => route('dashboard')
