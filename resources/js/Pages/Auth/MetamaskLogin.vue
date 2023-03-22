@@ -5,7 +5,7 @@
       <logo class="block mx-auto w-full max-w-xs fill-white" height="50" />
       <form class="mt-8 bg-white rounded-lg shadow-xl overflow-hidden" @submit.prevent="login">
         <div class="px-10 py-12">
-          <h1 class="text-center text-3xl font-bold">Logic with Metamask</h1>
+          <h1 class="text-center text-3xl font-bold">Login with Metamask</h1>
         </div>
         <div class="flex px-10 py-4 bg-gray-100 border-t border-gray-100">
           <loading-button class="btn-fuchsia px-4 py-2 mx-auto" type="submit">Connect Wallet</loading-button>
