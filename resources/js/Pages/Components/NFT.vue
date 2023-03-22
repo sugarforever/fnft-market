@@ -1,15 +1,15 @@
 <template>
-  <div class="aspect-[4/3] flex flex-col flex-1">
+  <figure class="aspect-w-4 aspect-h-3 flex flex-col flex-1">
     <div class="flex flex-1 items-center justify-center">
-      <img class="w-full" :src="imageSrc" />
+      <img class="w-full" :src="imageSrc" alt="Token image" />
     </div>
-    <!--div>{{ token.tokenId }}</div-->
-    <div class="flex-0 text-center py-4">
-      <button class="text-white bg-fuchsia-500 px-6 py-1 rounded" v-if="!token.owner" @click="mint">mint</button>
+    <!--figcaption>{{ token.tokenId }}</figcaption-->
+    <figcaption class="flex-0 text-center py-4">
+      <button class="text-white bg-fuchsia-500 px-6 py-1 rounded" v-if="!token.owner" @click="mint">Mint</button>
       <button class="text-white bg-indigo-500 px-6 py-1 rounded"
-        v-if="token.owner && token.owner == eth_address">list</button>
-    </div>
-  </div>
+        v-if="token.owner && token.owner == eth_address">List</button>
+    </figcaption>
+  </figure>
 </template>
 
 <script>
